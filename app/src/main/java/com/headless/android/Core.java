@@ -245,8 +245,8 @@ final class Core {
 
     private int[] screenSize() {
         int columns = Prefs.columns(context);
-        if (columns == 1) return new int[]{540, 720};
-        if (columns == 2) return new int[]{420, 560};
+        if (columns == 1) return new int[]{720, 960};
+        if (columns == 2) return new int[]{540, 720};
         return new int[]{360, 480};
     }
 

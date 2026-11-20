@@ -105,7 +105,7 @@ class MainActivity : Activity() {
         findViewById<View>(R.id.btn_add_app).setOnClickListener { switchTo(APPS) }
         findViewById<View>(R.id.btn_close_all).setOnClickListener {
             core?.closeAll()
-            signature = ""
+            signature = "force"
             refresh()
         }
         endpointText.setOnClickListener { showToken() }
@@ -203,7 +203,7 @@ class MainActivity : Activity() {
             textSize = 12f
             setBackgroundResource(R.drawable.bg_button_tonal)
             setTextColor(resources.getColor(R.color.on_surface, null))
-            layoutParams = LinearLayout.LayoutParams(Util.dp(this@MainActivity, 76f),
+            layoutParams = LinearLayout.LayoutParams(Util.dp(this@MainActivity, 64f),
                 Util.dp(this@MainActivity, 44f))
             setOnClickListener { click() }
         }
@@ -251,7 +251,7 @@ class MainActivity : Activity() {
                 val tile = DisplayTile(this, slot)
                 tile.setOnClickListener { signature = ""; refresh() }
                 tile.layoutParams = LinearLayout.LayoutParams(0,
-                    Util.dp(this, 180f), 1f)
+                    Util.dp(this, 260f), 1f)
                 card.addView(tile)
 
                 val controls = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
@@ -263,13 +263,13 @@ class MainActivity : Activity() {
                 })
                 controls.addView(controlButton("Close") {
                     core?.close(slot.slot)
-                    signature = ""
+                    signature = "force"
                     refresh()
                 })
                 card.addView(controls)
 
                 val params = LinearLayout.LayoutParams(0,
-                    Util.dp(this, 180f), 1f)
+                    Util.dp(this, 260f), 1f)
                 params.setMargins(0, 0, Util.dp(this, 8f), Util.dp(this, 8f))
                 card.layoutParams = params
                 row!!.addView(card)
