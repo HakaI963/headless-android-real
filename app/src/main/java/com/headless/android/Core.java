@@ -209,22 +209,14 @@ final class Core {
     private void startSlot(Slot slot) {
         try {
             DisplaySession session = DisplaySession.create(context, slot.width, slot.height,
-                    slot.width * 2 / 3);
+                    context.getResources().getDisplayMetrics().densityDpi);
             slot.session = session;
             slot.displayId = session.displayId;
             JSONObject reply = shell(new JSONObject()
                     .put("cmd", "start").put("component", slot.component)
                     .put("display", slot.displayId));
             if (!reply.optBoolean("ok")) {
-                Intent intent = context.getPackageManager().getLaunchIntentForPackage(slot.pkg);
-                if (intent != null) {
-                    ActivityOptions options = ActivityOptions.makeBasic();
-                    options.setLaunchDisplayId(slot.displayId);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    context.startActivity(intent, options.toBundle());
-                } else {
-                    throw new IllegalStateException(reply.optString("error", "launch failed"));
-                }
+                throw new IllegalStateException(reply.optString("error", "launch failed"));
             }
             slot.state = "live";
             // The app on the virtual display must not steal the controller UI.

@@ -106,14 +106,10 @@ public class ShellService extends Binder {
                     if (component.isEmpty() || display < 0) {
                         return Util.fail("bad start command").toString();
                     }
-                    boolean started = startWithOptions(component, display);
-                    if (!started) {
-                        Result result = run("am start --user 0 --display " + display
-                                + " -f 0x10000000 -n '" + component.replace("'", "'\\''") + "'");
-                        started = result.code == 0;
-                        out.put("output", result.output);
-                    }
-                    out.put("ok", started);
+                    Result result = run("am start --user 0 --display " + display
+                            + " -f 0x10000000 -n '" + component.replace("'", "'\\''") + "'");
+                    out.put("ok", result.code == 0);
+                    out.put("output", result.output);
                     break;
                 }
                 case "stop": {
