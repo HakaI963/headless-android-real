@@ -7,6 +7,7 @@
         <item name="android:statusBarColor">@color/surface_container_lowest</item>
         <item name="android:navigationBarColor">@color/surface_container_lowest</item>
         <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
         <item name="android:colorAccent">@color/primary</item>
         <item name="android:textColorPrimary">@color/on_surface</item>
         <item name="android:textColorSecondary">@color/on_surface_variant</item>

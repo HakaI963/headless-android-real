@@ -20,6 +20,7 @@ import android.view.ViewGroup
 import android.view.animation.AlphaAnimation
 import android.view.animation.DecelerateInterpolator
 import android.widget.BaseAdapter
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -199,6 +200,35 @@ class MainActivity : Activity() {
         }
     }
 
+    private fun controlButton(label: String, click: () -> Unit): Button {
+        return Button(this).apply {
+            text = label
+            textSize = 12f
+            setBackgroundResource(R.drawable.bg_button_tonal)
+            setTextColor(resources.getColor(R.color.on_surface, null))
+            layoutParams = LinearLayout.LayoutParams(Util.dp(this@MainActivity, 76f),
+                Util.dp(this@MainActivity, 44f))
+            setOnClickListener { click() }
+        }
+    }
+
+    private fun sendKey(slot: Core.Slot, code: Int) {
+        try {
+            core?.input("key", org.json.JSONObject()
+                .put("slot", slot.slot).put("code", code))
+        } catch (_: Throwable) {}
+    }
+
+    private fun invalidateTiles(view: View) {
+        if (view is DisplayTile) {
+            view.postInvalidate()
+            return
+        }
+        if (view is ViewGroup) {
+            for (i in 0 until view.childCount) invalidateTiles(view.getChildAt(i))
+        }
+    }
+
     private fun refresh() {
         val engine = core ?: return
         val state = Shizuku.get(this).state()
@@ -220,21 +250,35 @@ class MainActivity : Activity() {
                     row = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
                     tiles.addView(row)
                 }
+                val card = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL }
                 val tile = DisplayTile(this, slot)
                 tile.setOnClickListener { signature = ""; refresh() }
-                val params = LinearLayout.LayoutParams(0, Util.dp(this, 180f), 1f)
+                tile.layoutParams = LinearLayout.LayoutParams(0,
+                    Util.dp(this, 180f), 1f)
+                card.addView(tile)
+
+                val controls = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
+                controls.addView(controlButton("Back") {
+                    sendKey(slot, android.view.KeyEvent.KEYCODE_BACK)
+                })
+                controls.addView(controlButton("Home") {
+                    sendKey(slot, android.view.KeyEvent.KEYCODE_HOME)
+                })
+                controls.addView(controlButton("Close") {
+                    core?.close(slot.slot)
+                    signature = ""
+                    refresh()
+                })
+                card.addView(controls)
+
+                val params = LinearLayout.LayoutParams(0,
+                    Util.dp(this, 180f), 1f)
                 params.setMargins(0, 0, Util.dp(this, 8f), Util.dp(this, 8f))
-                tile.layoutParams = params
-                row!!.addView(tile)
+                card.layoutParams = params
+                row!!.addView(card)
             }
         }
-        for (i in 0 until tiles.childCount) {
-            val row = tiles.getChildAt(i) as? LinearLayout ?: continue
-            for (j in 0 until row.childCount) {
-                val tile = row.getChildAt(j)
-                if (tile is DisplayTile) tile.postInvalidate()
-            }
-        }
+        invalidateTiles(tiles)
     }
 
     private fun showToken() {
