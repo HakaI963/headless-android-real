@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- M3 dark baseline with custom primary; platform widgets only. -->
+    <style name="AppTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/surface_container_lowest</item>
+        <item name="android:colorBackground">@color/surface_container_lowest</item>
+        <item name="android:statusBarColor">@color/surface_container_lowest</item>
+        <item name="android:navigationBarColor">@color/surface_container_lowest</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorAccent">@color/primary</item>
+        <item name="android:textColorPrimary">@color/on_surface</item>
+        <item name="android:textColorSecondary">@color/on_surface_variant</item>
+    </style>
+
+    <!-- Material 3 baseline type scale, sizes only; system font, weights 400/500. -->
+    <style name="Text.M3.TitleLarge" parent="">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+    <style name="Text.M3.TitleMedium" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+    <style name="Text.M3.TitleSmall" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/on_surface</item>
+    </style>
+    <style name="Text.M3.BodyMedium" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+    <style name="Text.M3.BodySmall" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+    <style name="Text.M3.LabelSmall" parent="">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/on_surface_variant</item>
+    </style>
+</resources>

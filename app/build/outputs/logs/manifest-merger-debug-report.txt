@@ -1,0 +1,151 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:2:1-59:12
+INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:2:1-59:12
+INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:2:1-59:12
+INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:2:1-59:12
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /root/.gradle/caches/8.9/transforms/251be7a7bab53257cae13e2d906c9a10/transformed/provider-13.1.5/AndroidManifest.xml:2:1-16:12
+MERGED from [dev.rikka.shizuku:api:13.1.5] /root/.gradle/caches/8.9/transforms/e6fa02524ba31baa8027e789b54cdbe0/transformed/api-13.1.5/AndroidManifest.xml:2:1-7:12
+MERGED from [dev.rikka.shizuku:shared:13.1.5] /root/.gradle/caches/8.9/transforms/a237fc24849bda4ea80a7ab6a4274ae0/transformed/shared-13.1.5/AndroidManifest.xml:2:1-7:12
+MERGED from [dev.rikka.shizuku:aidl:13.1.5] /root/.gradle/caches/8.9/transforms/2bd6124d10c3af040c70cdc0fd852e5b/transformed/aidl-13.1.5/AndroidManifest.xml:2:1-7:12
+	package
+		INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.QUERY_ALL_PACKAGES
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:4:5-77
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:4:22-74
+uses-permission#android.permission.INTERNET
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:6:5-68
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:6:22-65
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:7:5-77
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:7:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_SPECIAL_USE
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:8:5-89
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:8:22-86
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:9:5-77
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:9:22-74
+uses-permission#moe.shizuku.manager.permission.API_V23
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:10:5-78
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /root/.gradle/caches/8.9/transforms/251be7a7bab53257cae13e2d906c9a10/transformed/provider-13.1.5/AndroidManifest.xml:8:5-78
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /root/.gradle/caches/8.9/transforms/251be7a7bab53257cae13e2d906c9a10/transformed/provider-13.1.5/AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:10:22-75
+queries
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:12:5-14:15
+package#moe.shizuku.privileged.api
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:13:9-62
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:13:18-59
+application
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:16:5-58:19
+INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:16:5-58:19
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /root/.gradle/caches/8.9/transforms/251be7a7bab53257cae13e2d906c9a10/transformed/provider-13.1.5/AndroidManifest.xml:10:5-14:19
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /root/.gradle/caches/8.9/transforms/251be7a7bab53257cae13e2d906c9a10/transformed/provider-13.1.5/AndroidManifest.xml:10:5-14:19
+	android:extractNativeLibs
+		INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml
+	android:label
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:20:9-41
+	tools:ignore
+		ADDED from [dev.rikka.shizuku:provider:13.1.5] /root/.gradle/caches/8.9/transforms/251be7a7bab53257cae13e2d906c9a10/transformed/provider-13.1.5/AndroidManifest.xml:10:18-69
+	android:icon
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:19:9-43
+	android:allowBackup
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:18:9-36
+	android:theme
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:21:9-40
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:17:9-28
+provider#rikka.shizuku.ShizukuProvider
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:23:9-29:82
+	android:enabled
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:26:13-35
+	android:authorities
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:25:13-68
+	android:multiprocess
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:28:13-41
+	android:exported
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:29:13-79
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:24:13-57
+meta-data#moe.shizuku.client.V3_SUPPORT
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:31:9-33:36
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /root/.gradle/caches/8.9/transforms/251be7a7bab53257cae13e2d906c9a10/transformed/provider-13.1.5/AndroidManifest.xml:11:9-13:36
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /root/.gradle/caches/8.9/transforms/251be7a7bab53257cae13e2d906c9a10/transformed/provider-13.1.5/AndroidManifest.xml:11:9-13:36
+	android:value
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:33:13-33
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:32:13-57
+activity#com.headless.android.MainActivity
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:35:9-43:20
+	android:screenOrientation
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:38:13-49
+	android:exported
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:37:13-36
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:36:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:39:13-42:29
+action#android.intent.action.MAIN
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:40:17-69
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:40:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:41:17-77
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:41:27-74
+service#com.headless.android.ShellService
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:45:9-48:40
+	android:process
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:47:13-37
+	android:exported
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:48:13-37
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:46:13-41
+service#com.headless.android.HeadlessService
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:50:9-57:19
+	android:exported
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:52:13-37
+	android:foregroundServiceType
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:53:13-55
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:51:13-44
+property#android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE
+ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:54:13-56:85
+	android:value
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:56:17-82
+	android:name
+		ADDED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:55:17-76
+uses-sdk
+INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml
+INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /root/.gradle/caches/8.9/transforms/251be7a7bab53257cae13e2d906c9a10/transformed/provider-13.1.5/AndroidManifest.xml:6:5-44
+MERGED from [dev.rikka.shizuku:provider:13.1.5] /root/.gradle/caches/8.9/transforms/251be7a7bab53257cae13e2d906c9a10/transformed/provider-13.1.5/AndroidManifest.xml:6:5-44
+MERGED from [dev.rikka.shizuku:api:13.1.5] /root/.gradle/caches/8.9/transforms/e6fa02524ba31baa8027e789b54cdbe0/transformed/api-13.1.5/AndroidManifest.xml:5:5-44
+MERGED from [dev.rikka.shizuku:api:13.1.5] /root/.gradle/caches/8.9/transforms/e6fa02524ba31baa8027e789b54cdbe0/transformed/api-13.1.5/AndroidManifest.xml:5:5-44
+MERGED from [dev.rikka.shizuku:shared:13.1.5] /root/.gradle/caches/8.9/transforms/a237fc24849bda4ea80a7ab6a4274ae0/transformed/shared-13.1.5/AndroidManifest.xml:5:5-44
+MERGED from [dev.rikka.shizuku:shared:13.1.5] /root/.gradle/caches/8.9/transforms/a237fc24849bda4ea80a7ab6a4274ae0/transformed/shared-13.1.5/AndroidManifest.xml:5:5-44
+MERGED from [dev.rikka.shizuku:aidl:13.1.5] /root/.gradle/caches/8.9/transforms/2bd6124d10c3af040c70cdc0fd852e5b/transformed/aidl-13.1.5/AndroidManifest.xml:5:5-44
+MERGED from [dev.rikka.shizuku:aidl:13.1.5] /root/.gradle/caches/8.9/transforms/2bd6124d10c3af040c70cdc0fd852e5b/transformed/aidl-13.1.5/AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /root/workspace/headless-android-real/app/src/main/AndroidManifest.xml

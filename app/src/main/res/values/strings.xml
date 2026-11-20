@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Headless Android</string>
+    <string name="tagline">Private screens for your apps</string>
+    <string name="session">Session</string>
+    <string name="displays">Displays</string>
+    <string name="apps">Apps</string>
+    <string name="settings">Settings</string>
+    <string name="create_display">Create display</string>
+    <string name="add_app">Add app</string>
+    <string name="grant">Grant</string>
+    <string name="open_shizuku">Open Shizuku</string>
+    <string name="empty">No displays yet. Create one or add an app.</string>
+    <string name="search">Search apps</string>
+    <string name="port">MCP port</string>
+    <string name="token">Access token</string>
+    <string name="save">Save</string>
+    <string name="new_token">New token</string>
+    <string name="columns">Tile columns</string>
+    <string name="back">Back</string>
+    <string name="home">Home</string>
+    <string name="close">Close</string>
+    <string name="copy">Copy</string>
+</resources>

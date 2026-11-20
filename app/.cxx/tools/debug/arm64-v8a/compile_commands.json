@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/root/workspace/headless-android-real/app/.cxx/Debug/15945p68/arm64-v8a",
+  "command": "/root/workspace/.android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android29 --sysroot=/root/workspace/.android-sdk/ndk/27.2.12479018/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dheadless_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -fno-limit-debug-info  -fPIC -o CMakeFiles/headless.dir/headless.cpp.o -c /root/workspace/headless-android-real/app/src/main/cpp/headless.cpp",
+  "file": "/root/workspace/headless-android-real/app/src/main/cpp/headless.cpp",
+  "output": "CMakeFiles/headless.dir/headless.cpp.o"
+}
+]

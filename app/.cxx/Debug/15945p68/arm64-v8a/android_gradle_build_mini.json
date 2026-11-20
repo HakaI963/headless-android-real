@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "/root/workspace/headless-android-real/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/usr/bin/ninja",
+      "-C",
+      "/root/workspace/headless-android-real/app/.cxx/Debug/15945p68/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/usr/bin/ninja",
+    "-C",
+    "/root/workspace/headless-android-real/app/.cxx/Debug/15945p68/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "headless::@6890427a1f51a3e7e1df": {
+      "artifactName": "headless",
+      "abi": "arm64-v8a",
+      "output": "/root/workspace/headless-android-real/app/build/intermediates/cxx/Debug/15945p68/obj/arm64-v8a/libheadless.so",
+      "runtimeFiles": []
+    }
+  }
+}

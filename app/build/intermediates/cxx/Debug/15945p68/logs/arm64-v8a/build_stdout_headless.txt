@@ -1,0 +1,2 @@
+ninja: Entering directory `/root/workspace/headless-android-real/app/.cxx/Debug/15945p68/arm64-v8a'
+ninja: no work to do.

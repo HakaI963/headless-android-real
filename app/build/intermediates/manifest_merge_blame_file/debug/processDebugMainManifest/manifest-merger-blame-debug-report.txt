@@ -1,0 +1,121 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.headless.android.real"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+11-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:4:5-77
+11-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:4:22-74
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:5:5-67
+12-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:6:5-68
+13-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:6:22-65
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:7:5-77
+14-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:7:22-74
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+15-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:8:5-89
+15-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:8:22-86
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:9:5-77
+16-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:9:22-74
+17    <uses-permission android:name="moe.shizuku.manager.permission.API_V23" />
+17-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:10:5-78
+17-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:10:22-75
+18
+19    <queries>
+19-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:12:5-14:15
+20        <package android:name="moe.shizuku.privileged.api" />
+20-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:13:9-62
+20-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:13:18-59
+21    </queries>
+22
+23    <application
+23-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:16:5-58:19
+24        android:name="com.headless.android.App"
+24-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:17:9-28
+25        android:allowBackup="false"
+25-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:18:9-36
+26        android:debuggable="true"
+27        android:extractNativeLibs="false"
+28        android:icon="@mipmap/ic_launcher"
+28-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:19:9-43
+29        android:label="@string/app_name"
+29-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:20:9-41
+30        android:theme="@style/AppTheme" >
+30-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:21:9-40
+31        <provider
+31-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:23:9-29:82
+32            android:name="rikka.shizuku.ShizukuProvider"
+32-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:24:13-57
+33            android:authorities="com.headless.android.real.shizuku"
+33-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:25:13-68
+34            android:enabled="true"
+34-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:26:13-35
+35            android:exported="true"
+35-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:27:13-36
+36            android:multiprocess="false"
+36-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:28:13-41
+37            android:permission="android.permission.INTERACT_ACROSS_USERS_FULL" />
+37-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:29:13-79
+38
+39        <meta-data
+39-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:31:9-33:36
+40            android:name="moe.shizuku.client.V3_SUPPORT"
+40-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:32:13-57
+41            android:value="true" />
+41-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:33:13-33
+42
+43        <activity
+43-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:35:9-43:20
+44            android:name="com.headless.android.MainActivity"
+44-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:36:13-41
+45            android:exported="true"
+45-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:37:13-36
+46            android:screenOrientation="portrait" >
+46-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:38:13-49
+47            <intent-filter>
+47-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:39:13-42:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:40:17-69
+48-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:40:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:41:17-77
+50-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:41:27-74
+51            </intent-filter>
+52        </activity>
+53
+54        <service
+54-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:45:9-48:40
+55            android:name="com.headless.android.ShellService"
+55-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:46:13-41
+56            android:exported="false"
+56-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:48:13-37
+57            android:process=":shell" />
+57-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:47:13-37
+58        <service
+58-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:50:9-57:19
+59            android:name="com.headless.android.HeadlessService"
+59-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:51:13-44
+60            android:exported="false"
+60-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:52:13-37
+61            android:foregroundServiceType="specialUse" >
+61-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:53:13-55
+62            <property
+62-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:54:13-56:85
+63                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+63-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:55:17-76
+64                android:value="Keeps virtual displays and the MCP endpoint alive" />
+64-->/root/workspace/headless-android-real/app/src/main/AndroidManifest.xml:56:17-82
+65        </service>
+66    </application>
+67
+68</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Material 3 dark color roles (custom amber primary, neutral surfaces). -->
+<resources>
+    <color name="surface_container_lowest">#FF0B0D12</color>
+    <color name="surface_container_low">#FF12161D</color>
+    <color name="surface_container">#FF1B2029</color>
+    <color name="surface_container_high">#FF242A35</color>
+    <color name="on_surface">#FFE6E1E5</color>
+    <color name="on_surface_variant">#FFC4C7D2</color>
+    <color name="primary">#FFE0A458</color>
+    <color name="on_primary">#FF1A1206</color>
+    <color name="secondary_container">#FF4A3B24</color>
+    <color name="on_secondary_container">#FFFFE0B2</color>
+    <color name="error">#FFF2B8B5</color>
+    <color name="outline">#FF49454F</color>
+</resources>
