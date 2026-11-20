@@ -1,5 +1,9 @@
 package com.headless.android;
 
+import android.app.ActivityOptions;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Binder;
 import android.os.HandlerThread;
 import android.os.Parcel;
@@ -54,6 +58,31 @@ public class ShellService extends Binder {
         return local;
     }
 
+    private Context appContext() {
+        try {
+            return (Context) Class.forName("android.app.ActivityThread")
+                    .getMethod("currentApplication").invoke(null);
+        } catch (Throwable e) {
+            return null;
+        }
+    }
+
+    private boolean startWithOptions(String component, int display) {
+        try {
+            Context context = appContext();
+            if (context == null) return false;
+            Intent intent = new Intent();
+            intent.setComponent(ComponentName.unflattenFromString(component));
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            ActivityOptions options = ActivityOptions.makeBasic();
+            options.setLaunchDisplayId(display);
+            context.startActivity(intent, options.toBundle());
+            return true;
+        } catch (Throwable e) {
+            return false;
+        }
+    }
+
     private String exec(String raw) {
         JSONObject out = new JSONObject();
         try {
@@ -77,10 +106,14 @@ public class ShellService extends Binder {
                     if (component.isEmpty() || display < 0) {
                         return Util.fail("bad start command").toString();
                     }
-                    Result result = run("am start --user 0 --display " + display
-                            + " -f 0x18000000 -W -n '" + component.replace("'", "'\\''") + "'");
-                    out.put("ok", result.code == 0);
-                    out.put("output", result.output);
+                    boolean started = startWithOptions(component, display);
+                    if (!started) {
+                        Result result = run("am start --user 0 --display " + display
+                                + " -f 0x10000000 -n '" + component.replace("'", "'\\''") + "'");
+                        started = result.code == 0;
+                        out.put("output", result.output);
+                    }
+                    out.put("ok", started);
                     break;
                 }
                 case "stop": {
