@@ -1,66 +1,70 @@
 [
     {
-        "merged": "com.headless.android.app-debug-4:/drawable_ic_apps.xml.flat",
-        "source": "com.headless.android.app-main-6:/drawable/ic_apps.xml"
-    },
-    {
-        "merged": "com.headless.android.app-debug-4:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.headless.android.app-main-6:/drawable/ic_launcher_foreground.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/layout/activity_main.xml"
     },
     {
         "merged": "com.headless.android.app-debug-4:/layout_activity_main.xml.flat",
         "source": "com.headless.android.app-main-6:/layout/activity_main.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/layout_page_displays.xml.flat",
-        "source": "com.headless.android.app-main-6:/layout/page_displays.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/layout_page_settings.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/layout/page_settings.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/drawable_bg_button_filled.xml.flat",
-        "source": "com.headless.android.app-main-6:/drawable/bg_button_filled.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/drawable_ic_stat.xml.flat",
-        "source": "com.headless.android.app-main-6:/drawable/ic_stat.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/layout_page_displays.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/layout/page_displays.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/drawable_ic_displays.xml.flat",
-        "source": "com.headless.android.app-main-6:/drawable/ic_displays.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/drawable_ic_displays.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/drawable/ic_displays.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/layout_page_settings.xml.flat",
-        "source": "com.headless.android.app-main-6:/layout/page_settings.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/drawable_bg_field.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/drawable/bg_field.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/layout_page_apps.xml.flat",
-        "source": "com.headless.android.app-main-6:/layout/page_apps.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/drawable_ic_settings.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/drawable/ic_settings.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/drawable_ic_settings.xml.flat",
-        "source": "com.headless.android.app-main-6:/drawable/ic_settings.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/layout_page_apps.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/layout/page_apps.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/drawable_bg_card.xml.flat",
-        "source": "com.headless.android.app-main-6:/drawable/bg_card.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/drawable_bg_indicator.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/drawable/bg_indicator.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.headless.android.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/drawable_bg_button_tonal.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/drawable/bg_button_tonal.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/drawable_bg_field.xml.flat",
-        "source": "com.headless.android.app-main-6:/drawable/bg_field.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/drawable_bg_button_filled.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/drawable/bg_button_filled.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/mipmap_ic_launcher.xml.flat",
-        "source": "com.headless.android.app-main-6:/mipmap/ic_launcher.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/mipmap_ic_launcher.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/mipmap/ic_launcher.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/drawable_bg_indicator.xml.flat",
-        "source": "com.headless.android.app-main-6:/drawable/bg_indicator.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/drawable_ic_stat.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/drawable/ic_stat.xml"
     },
     {
-        "merged": "com.headless.android.app-debug-4:/drawable_bg_button_tonal.xml.flat",
-        "source": "com.headless.android.app-main-6:/drawable/bg_button_tonal.xml"
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/drawable_bg_card.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/drawable_ic_apps.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/drawable/ic_apps.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.9/com.headless.android.app-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/root/.gradle/daemon/8.9/com.headless.android.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
     }
 ]

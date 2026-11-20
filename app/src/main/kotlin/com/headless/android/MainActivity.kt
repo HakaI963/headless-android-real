@@ -44,6 +44,7 @@ class MainActivity : Activity() {
     private lateinit var endpointText: TextView
     private lateinit var countText: TextView
     private lateinit var appAdapter: AppAdapter
+    private lateinit var appsReload: Runnable
     private var signature = ""
 
     private val ticker = Handler(Looper.getMainLooper())
@@ -107,6 +108,8 @@ class MainActivity : Activity() {
         val list = findViewById<ListView>(R.id.app_list)
         appAdapter = AppAdapter(core?.apps().orEmpty())
         list.adapter = appAdapter
+        appsReload = Runnable { appAdapter.replace(core?.apps().orEmpty()) }
+        core?.addListener(appsReload)
         list.onItemClickListener = android.widget.AdapterView.OnItemClickListener { _, _, position, _ ->
             val entry = appAdapter.item(position)
             core?.launch(entry.pkg)
@@ -156,6 +159,11 @@ class MainActivity : Activity() {
     override fun onPause() {
         try { ticker.removeCallbacks(step) } catch (_: Throwable) {}
         super.onPause()
+    }
+
+    override fun onDestroy() {
+        try { core?.removeListener(appsReload) } catch (_: Throwable) {}
+        super.onDestroy()
     }
 
     private fun switchTo(index: Int) {
@@ -250,6 +258,13 @@ class MainActivity : Activity() {
     private inner class AppAdapter(entries: List<Core.AppInfo>) : BaseAdapter() {
         private val all = ArrayList(entries)
         private var shown = ArrayList(entries)
+
+        fun replace(entries: List<Core.AppInfo>) {
+            all.clear()
+            all.addAll(entries)
+            shown = ArrayList(entries)
+            notifyDataSetChanged()
+        }
 
         fun filter(query: String) {
             val needle = query.trim().lowercase(Locale.US)

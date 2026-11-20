@@ -33,18 +33,24 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <View
-                android:id="@+id/indicator_displays"
+            <FrameLayout
                 android:layout_width="56dp"
-                android:layout_height="32dp"
-                android:background="@drawable/bg_indicator" />
+                android:layout_height="32dp">
 
-            <ImageView
-                android:id="@+id/icon_displays"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:contentDescription="@string/displays"
-                android:src="@drawable/ic_displays" />
+                <View
+                    android:id="@+id/indicator_displays"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_indicator" />
+
+                <ImageView
+                    android:id="@+id/icon_displays"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/displays"
+                    android:src="@drawable/ic_displays" />
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/label_displays"
@@ -63,19 +69,25 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <View
-                android:id="@+id/indicator_apps"
+            <FrameLayout
                 android:layout_width="56dp"
-                android:layout_height="32dp"
-                android:background="@drawable/bg_indicator"
-                android:visibility="invisible" />
+                android:layout_height="32dp">
 
-            <ImageView
-                android:id="@+id/icon_apps"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:contentDescription="@string/apps"
-                android:src="@drawable/ic_apps" />
+                <View
+                    android:id="@+id/indicator_apps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_indicator"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/icon_apps"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/apps"
+                    android:src="@drawable/ic_apps" />
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/label_apps"
@@ -94,19 +106,25 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <View
-                android:id="@+id/indicator_settings"
+            <FrameLayout
                 android:layout_width="56dp"
-                android:layout_height="32dp"
-                android:background="@drawable/bg_indicator"
-                android:visibility="invisible" />
+                android:layout_height="32dp">
 
-            <ImageView
-                android:id="@+id/icon_settings"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:contentDescription="@string/settings"
-                android:src="@drawable/ic_settings" />
+                <View
+                    android:id="@+id/indicator_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_indicator"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/icon_settings"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/settings"
+                    android:src="@drawable/ic_settings" />
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/label_settings"
