@@ -103,9 +103,13 @@ class MainActivity : Activity() {
         }
         findViewById<View>(R.id.btn_create).setOnClickListener { core?.createDisplay() }
         findViewById<View>(R.id.btn_add_app).setOnClickListener { switchTo(APPS) }
+        findViewById<View>(R.id.btn_close_all).setOnClickListener {
+            core?.closeAll()
+            signature = ""
+            refresh()
+        }
         endpointText.setOnClickListener { showToken() }
 
-        val search = findViewById<EditText>(R.id.app_search)
         val list = findViewById<ListView>(R.id.app_list)
         appAdapter = AppAdapter(core?.apps().orEmpty())
         list.adapter = appAdapter
@@ -116,13 +120,6 @@ class MainActivity : Activity() {
             core?.launch(entry.pkg)
             switchTo(DISPLAYS)
         }
-        search.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, a: Int, b: Int, c: Int) {}
-            override fun onTextChanged(s: CharSequence?, a: Int, b: Int, c: Int) {
-                appAdapter.filter(s.toString())
-            }
-            override fun afterTextChanged(s: Editable?) {}
-        })
 
         val portField = findViewById<EditText>(R.id.port_field)
         portField.setText(Prefs.port(this).toString())

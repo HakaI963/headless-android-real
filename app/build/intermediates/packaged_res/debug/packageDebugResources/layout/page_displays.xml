@@ -134,6 +134,17 @@
                 android:text="@string/add_app"
                 android:textColor="@color/on_primary"
                 android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_close_all"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_tonal"
+                android:text="Close all"
+                android:textColor="@color/on_surface"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout

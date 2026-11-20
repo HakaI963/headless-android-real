@@ -21,9 +21,9 @@ int drawable ic_launcher_foreground 0x7f020007
 int drawable ic_settings 0x7f020008
 int drawable ic_stat 0x7f020009
 int id app_list 0x7f030000
-int id app_search 0x7f030001
-int id bottom_nav 0x7f030002
-int id btn_add_app 0x7f030003
+int id bottom_nav 0x7f030001
+int id btn_add_app 0x7f030002
+int id btn_close_all 0x7f030003
 int id btn_columns_1 0x7f030004
 int id btn_columns_2 0x7f030005
 int id btn_copy 0x7f030006

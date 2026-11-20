@@ -22,9 +22,9 @@ drawable ic_launcher_foreground
 drawable ic_settings
 drawable ic_stat
 id app_list
-id app_search
 id bottom_nav
 id btn_add_app
+id btn_close_all
 id btn_columns_1
 id btn_columns_2
 id btn_copy
