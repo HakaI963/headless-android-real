@@ -7,7 +7,6 @@ import android.hardware.display.DisplayManager;
 import android.hardware.display.VirtualDisplay;
 import android.media.Image;
 import android.media.ImageReader;
-import android.os.SystemClock;
 import android.view.Display;
 
 import java.lang.reflect.Field;
@@ -72,19 +71,6 @@ final class DisplaySession {
             return field.getInt(null);
         } catch (Throwable e) {
             return 0;
-        }
-    }
-
-    /** Some ROMs create public virtual displays in the OFF state; reattach to wake. */
-    void ensureOn() {
-        try {
-            Display display = this.display.getDisplay();
-            if (display != null && display.getState() == Display.STATE_ON) return;
-            this.display.setSurface(null);
-            SystemClock.sleep(120);
-            this.display.setSurface(reader.getSurface());
-            SystemClock.sleep(300);
-        } catch (Throwable ignored) {
         }
     }
 

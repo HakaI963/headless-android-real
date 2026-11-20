@@ -176,7 +176,6 @@ final class Core {
             try {
                 DisplaySession session = DisplaySession.create(context, slot.width, slot.height,
                         context.getResources().getDisplayMetrics().densityDpi);
-                session.ensureOn();
                 slot.session = session;
                 slot.displayId = session.displayId;
                 slot.state = "live";
@@ -211,7 +210,6 @@ final class Core {
         try {
             DisplaySession session = DisplaySession.create(context, slot.width, slot.height,
                     slot.width * 2 / 3);
-            session.ensureOn();
             slot.session = session;
             slot.displayId = session.displayId;
             JSONObject reply = shell(new JSONObject()
